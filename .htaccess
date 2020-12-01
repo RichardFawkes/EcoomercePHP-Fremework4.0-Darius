@@ -1,0 +1,37 @@
+RewriteEngine On
+#RewriteBase /
+
+# Deixando URL amigável pra área dos produtos
+RewriteRule ^produto/([a-z0-9-]+)/?$ produto.php?urlProduto=$1 [NC,L]
+RewriteRule ^produtou/([a-z0-9-]+)/?$ produtou.php?urlProduto=$1&id=$2 [QSA]
+RewriteRule ^Categoria/([a-z0-9-]+)/?$ categoria.php?urlLink=$1 [NC,L]
+RewriteRule ^Linhas-Proprias/([a-z0-9-]+)/?$ linhas-proprias.php?urlLink=$1 [NC,L]
+RewriteRule ^3D/([a-z0-9-]+)/?$ 3D/index.php?urlLink=$1 [NC,L]
+RewriteRule ^3D/uploads/([a-z0-9-]+)/?$ 3D/uploads/index.php?urlLink=$1 [NC,L]
+RewriteRule ^adm/?$ adm/index.php [NC,L]
+
+
+#RewriteRule ^acompanhar-pedido/([a-z0-9-]+)/?$ acompanhar-pedido.php?pedido=$1 [NC,L]
+
+
+# Removendo extensão php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+#RewriteCond %{HTTP_HOST} ^www\. [NC]
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+
+
+
+
+#RewriteRule ^adm/(.*)$ adm/index.php [L]
+
+#DirectoryIndex index.php
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+#RewriteRule . /index.php [L]

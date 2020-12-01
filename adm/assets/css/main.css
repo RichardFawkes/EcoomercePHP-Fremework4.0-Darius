@@ -1,0 +1,83 @@
+html{
+  background-color: #F5F5F5 !important;
+}
+body{
+  background-color: #F5F5F5 !important;
+  height: 100% !important;
+}
+
+.page-title{
+    color: #34373b;
+}
+
+#topnav {
+  background-color: #4bb777;
+}
+#topnav .topbar-main{
+  background-color: #34373b;
+}
+/* cor do menu*/
+.rmm.style ul {
+  background-color: #4bb777 !important;
+}
+.rmm.style .rmm-mobile li {
+    background-color: #4bb777 !important;
+}
+.rmm.style ul span {
+  color: #34373b;
+}
+.rmm.style ul li span:hover {
+  color: #FFFFFF;
+}
+.rmm.style ul li:hover {
+  background-color: #67c28c;
+}
+
+.rmm ul ul li a:hover {background: #4bb777;}
+.rmm.style ul ul li a:hover {
+  background-color: #67c28c;
+}
+.rmm.style ul li > a:not(:only-child):after {
+  color: #34373b;
+}
+textarea{
+  resize: none;
+}
+.invisivel{
+  display:none;
+}
+
+.visivel{
+  display:block;
+}
+
+.rmm-toggled{
+  background: #4bb777 !important;
+}
+/**/
+
+
+#topnav .topbar-main .profile img {
+  margin: 8px auto;
+  border: 2px solid #4bb777;
+  height: 40px;
+  width: 40px;
+}
+.user-box .profile {
+  color: #FFF !important;
+}
+
+
+/* LOADER */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/rollingloader.gif) center no-repeat #fff;
+  background-size: 100px 100px;
+}
